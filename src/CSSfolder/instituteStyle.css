@@ -1,18 +1,14 @@
- .col-md-6{
-    height: 30vh;
-    margin-bottom: 2vh;
-}
-
-.adminsection{
-    border: 1px solid red;
-    max-width: auto;
-    height: 30vh;
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5vh;
-   
+    background-position: center;
+    max-height: 100vh;
 }
-.row{
-    margin-top: 28vh;
+
+.adminsection{
+    background-color: rgb(20, 25, 25);
+
+
 }
+
