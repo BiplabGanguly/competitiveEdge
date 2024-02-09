@@ -1,11 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import "../CSSfolder/instituteStyle.css"
 
 function Institute() {
   return (
     <div>
-      <h2>
-        <Link to="/admin-login">admin</Link>|Faculty</h2>
+      <div classname="container">
+        <div className='row'>
+          <div className='col-md-6'>
+            <div className='adminsection'>
+              <Link to="/admin-login">admin</Link>
+            </div>
+          </div>
+          <div className='col-md-6'>Faculty</div>
+        </div>
+      </div>
     </div>
   )
 }
