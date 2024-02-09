@@ -2,7 +2,7 @@ import "./App.css";
 import Home from "./components/Home";
 import Institute from "./components/Institute";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AdminLogin from "./containers/Admin-login";
+import AdminLogin from "./containers/AdminLogin";
 
 function App() {
   return (
