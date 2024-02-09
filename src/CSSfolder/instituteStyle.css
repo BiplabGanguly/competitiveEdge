@@ -5,6 +5,7 @@
 
 .adminsection{
     border: 1px solid red;
+    background-color: green;
     max-width: auto;
     height: 30vh;
     display: flex;
@@ -15,4 +16,5 @@
 }
 .row{
     margin-top: 28vh;
+
 }
