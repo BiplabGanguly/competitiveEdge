@@ -5,7 +5,7 @@ import "../CSSfolder/instituteStyle.css"
 function Institute() {
   return (
     <div>
-      <div classname="container">
+      <div classname="container institutecontainer">
         <div className='row'>
           <div className='col-md-6'>
             <div className='adminsection'>
