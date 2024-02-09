@@ -2,7 +2,7 @@ import "./App.css";
 import Home from "./components/Home";
 import Institute from "./components/Institute";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Admin_login from "./containers/Admin_login";
+import AdminLogin from "./containers/Admin-login";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <Routes>
           <Route path="/institute" element={<Institute />} />
           <Route path="/" element={<Home />} />
-          <Route path="/admin-login" element={<Admin_login/>}/>
+          <Route path="/admin-login" element={<AdminLogin/>}/>
         </Routes>
       </Router>
     </div>
