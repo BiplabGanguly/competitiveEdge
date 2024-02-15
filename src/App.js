@@ -11,8 +11,8 @@ function App() {
       <Router>
         <Nav />
         <Routes>
-          <Route path="/institute" element={<Institute />} />
           <Route path="/" element={<Home />} />
+          <Route path="/institute" element={<Institute />} />
           <Route path="/admin-login" element={<AdminLogin />} />
         </Routes>
       </Router>
