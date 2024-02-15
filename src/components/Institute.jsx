@@ -9,7 +9,7 @@ function Institute() {
     <Nav/>
       <div className="container maincon">
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-6 ">
             <div className="adminsection">
               <Link to="/admin-login">Admin</Link>
             </div>
