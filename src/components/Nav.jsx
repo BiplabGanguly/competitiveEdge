@@ -23,12 +23,10 @@ function Nav() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-              <Link to="/" className="institute"><div className="nav-link">Home</div></Link>
+              <Link to="/" className="institute about"><div className="nav-link">Home</div></Link>
             </li>
             <li className="nav-item">
-              <div className="nav-link" href="#">
-                About
-              </div>
+                <Link to="/about" className="institute"><div className="nav-link">About</div></Link>
             </li>
             <li className="nav-item">
               <div className="nav-link">Our team</div>
