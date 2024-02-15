@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../CSSfolder/instituteStyle.css";
-
+import "../Css/instituteStyle.css";
 
 function Institute() {
   return (

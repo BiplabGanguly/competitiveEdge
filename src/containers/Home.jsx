@@ -1,6 +1,7 @@
 import React from "react";
-import '../CSSfolder/home.css';
+import '../Css/home.css';
 import examimg from '../Public/homeExam.png';
+import InstituteNavigate from "../components/InstituteNavigate";
 
 function Home() {
   return (
@@ -32,6 +33,9 @@ function Home() {
               <img src={examimg} alt="exam" className="img-home" />
             </div>
           </div>
+        </div>
+        <div className="row navigate-row">
+          <InstituteNavigate/>
         </div>
       </div>
     </>
