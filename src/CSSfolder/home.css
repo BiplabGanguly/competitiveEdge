@@ -1,0 +1,45 @@
+.container {
+    height: 100vh;
+}
+
+.img-home {
+    width: 80vh;
+    height: 80vh;
+}
+
+.content {
+    margin-top: 20vh;
+    height: 50vh;
+    text-align: justify;
+}
+
+.home-title {
+    font-size: 6vh;
+    color: #836FFF;
+}
+
+.home-para {
+    font-size: 2.4vh;
+    color: #070F2B;
+}
+
+.btn-home {
+    width: 30vh;
+    text-align: center;
+    border: 1px solid #836FFF;
+    color: #836FFF;
+    margin-top: 8px;
+    box-shadow: 0 0 8px #836FFF;
+    transition: 1s ease;
+}
+
+.btn-home:hover {
+    color: white;
+    background-color: #836FFF;
+}
+
+@media only screen and (max-width: 768px) {
+    [class*="img-container"] {
+        margin-top: 26vh;
+    }
+}
