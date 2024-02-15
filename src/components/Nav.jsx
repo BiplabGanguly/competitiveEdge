@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../CSSfolder/navStyle.css"
+import "../CSSfolder/navStyle.css";
 
 function Nav() {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
         <div className="navbar-brand" href="#">
-          Navbar
+          Competitive Edge
         </div>
         <button
           className="navbar-toggler"
@@ -22,7 +22,7 @@ function Nav() {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-          <li className="nav-item">
+            <li className="nav-item">
               <Link to="/" className="institute"><div className="nav-link">Home</div></Link>
             </li>
             <li className="nav-item">
@@ -37,17 +37,6 @@ function Nav() {
               <Link to="/institute" className="institute"><div className="nav-link">Institute</div></Link>
             </li>
           </ul>
-          <form className="d-flex" role="search">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </div>
     </nav>
