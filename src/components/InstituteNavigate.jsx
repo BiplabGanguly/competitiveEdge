@@ -1,13 +1,24 @@
-import React from 'react'
+import React from "react";
 
 function InstituteNavigate() {
   return (
     <>
-      <div className="InstitutePart">
-        <h2>Horizon</h2>
+    <div className="navigate-institute">
+    <div className="scroll-institute">
+        <div className="cardbox"><h2>horizon</h2><p>message from institute</p></div>
+        <div className="cardbox"><h2>horizon</h2><p>message from institute</p></div>
+        <div className="cardbox"><h2>horizon</h2><p>message from institute</p></div>
+        <div className="cardbox"><h2>horizon</h2><p>message from institute</p></div>
+        <div className="cardbox"><h2>horizon</h2><p>message from institute</p></div>
+        <div className="cardbox"><h2>horizon</h2><p>message from institute</p></div>
+        <div className="cardbox"><h2>horizon</h2><p>message from institute</p></div>
+        <div className="cardbox"><h2>horizon</h2><p>message from institute</p></div>
+        <div className="cardbox"><h2>horizon</h2><p>message from institute</p></div>
+        <div className="cardbox"><h2>horizon</h2><p>message from institute</p></div>
       </div>
+    </div>
     </>
-  )
+  );
 }
 
-export default InstituteNavigate
+export default InstituteNavigate;
