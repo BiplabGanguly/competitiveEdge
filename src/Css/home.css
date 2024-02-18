@@ -77,8 +77,33 @@
   box-shadow: 0 0 12px #211951;
 }
 
-@media only screen and (max-width: 768px) {
+
+
+@media only screen and (max-width: 1000px) {
+
+  [class *= "navigate-container"]{
+    margin-top: 24vh;
+  }
+}
+
+@media only screen and (max-width: 780px) {
   [class*="img-container"] {
     margin-top: 26vh;
+  }
+
+  [class *= "navigate-container"]{
+    margin-top: 56vh;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+  [class*="img-container"] {
+    margin-top: 34vh;
+  }
+
+  [class *= "navigate-container"]{
+    margin-top: 56vh;
   }
 }
