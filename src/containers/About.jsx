@@ -6,7 +6,7 @@ function About() {
     <>
       <div className="container">
         <div className="row">
-          <div className="col-md-12">Lorendkjdhkuhdskhdsihdsh</div>
+          <div className="col-md-12">hello</div>
         </div>
       </div>
     </>
