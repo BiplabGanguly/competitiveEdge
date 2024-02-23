@@ -1,3 +1,26 @@
-.col-md-12{
-    background-color: aqua;
+.about-col-img{
+    max-width: auto;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+}
+.about-lower-content{
+    margin-top: 39.6vh;
+    height: 15vh; 
+    font-size: 2.4vh;
+    color: #070F2B;
+}
+.about-title{
+    font-size: 8vh;
+    color: #836FFF;
+}
+.about-para{
+    font-size: 2.4vh;
+    color: #070F2B;
+}
+.about-col-content{
+    text-align: justify;
+    margin-top: 11vh;
 }
