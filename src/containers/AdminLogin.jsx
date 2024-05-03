@@ -1,11 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function AdminLogin() {
   return (
     <div>
       <h2>login</h2>
-      <h2>ragistration</h2>
-      <h1> Hi </h1>
+      <Link to="/signup">Signup</Link>
     </div>
   )
 }

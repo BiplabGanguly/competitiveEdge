@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AdminLogin from "./containers/AdminLogin";
 import About from "./containers/About.jsx";
 import Nav from "./components/Nav";
+import Signup from "./containers/Signup.jsx";
 
 function App() {
   return (
@@ -15,8 +16,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About/>} />
           <Route path="/admin-login" element={<AdminLogin/>}/>
-          <Route path = "/Institute" element ={<Institute/>}/>
-
+          <Route path = "/institute" element ={<Institute/>}/>
+          <Route path = "/signup" element={<Signup/>}/>
         </Routes>
       </Router>
     </div>
