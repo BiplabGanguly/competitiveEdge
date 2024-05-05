@@ -1,0 +1,22 @@
+.admin-login-title-row{
+    margin-top: 14vh;
+}
+
+.login-title{
+    font-size: 4vh;
+}
+
+.img-adminlogin{
+    width: 300px;
+
+    
+}
+.emailc{
+    height: 50px;
+}
+.usernamec{
+    height: 50px;
+}
+.passwordc{
+    height: 50px;
+}

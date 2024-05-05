@@ -9,54 +9,41 @@ function Signup() {
                     <div className='Ragistration-title'>Ragistration</div>
                 </div>
 
-                <div className="row">
-                    <div className="col-md-4 offset-md-2">
-                        <input type="text" className='form-control' placeholder='first name' />
-                    </div>
-                    <div className="col-md-4">
-                        <input type="text" className='form-control' placeholder='last name' />
-                    </div>
-                </div>
+                <div className="row signupform">
 
-                <div className="row">
-                    <div className="col-md-4 offset-md-2">
+                <select className='form-select'>
+                            <option selected>select</option>
+                            <option value="">mr</option>
+                            <option value="">ms</option>
+                            <option value="">mrs</option>
+                        </select>    
+                        <input type="text" className='form-control' placeholder='first name' />
+                    
+                        <input type="text" className='form-control' placeholder='middle name' />
+                        <input type="text" className='form-control' placeholder='last name' />
+                        <input type="text" className='form-control' placeholder='Username' />
+                        <input type="password" className='form-control' placeholder='password' />
+                        <input type="password" className='form-control' placeholder='confirm password' />
                         <input type="text" className='form-control' placeholder='email' />
-                    </div>
-                    <div className="col-md-4">
+                        <input type="text" className='form-control' placeholder='mob number' />
+                        <input type="date" className='form-control' placeholder='DOB' />
                         <select className='form-select'>
                             <option selected>select gender</option>
                             <option value="">male</option>
                             <option value="">female</option>
                             <option value="">other</option>
                         </select>
-                    </div>
-                </div>
+                        <input type="text" className='form-control' placeholder='address' />
+                        <input type="text" className='form-control' placeholder='city' />
+                        <input type="text" className='form-control' placeholder='pin code' />
+                        <input type="text" className='form-control' placeholder='state' />
+                        <input type="text" className='form-control' placeholder='country' />
+                        identity card<input type="file" className='form-control' placeholder='identity card' />
 
-                <div className="row">
-                    <div className="col-md-4 offset-md-2">
-                        <input type="text" className='form-control' placeholder='organization name' />
-                    </div>
-                    <div className="col-md-4">
-                        <input type="text" className='form-control' placeholder='User name' />
-                    </div>
-                </div>
+                        terms and condition <input type='checkbox' />
 
-                <div className="row">
-                    <div className="col-md-4 offset-md-2">
-                        <input type="text" className='form-control' placeholder='Password' />
-                    </div>
-                    <div className="col-md-4">
-                        <input type="text" className='form-control' placeholder='confirm Password' />
-                    </div>
-                </div>
+                        <button type='submit' className='btn btn-home'>Signup</button>
 
-                <div className="row">
-                    <div className="col-md-3 offset-md-3">
-                        <button type='button' className='btn btn-primary form-control'>Clean</button>
-                    </div>
-                    <div className="col-md-3">
-                        <button type='button' className='btn btn-success form-control'>Signup</button>
-                    </div>
                 </div>
 
             </div>
