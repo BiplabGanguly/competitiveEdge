@@ -1,0 +1,51 @@
+.admin-login-title-row{
+    margin-top: 14vh;
+}
+
+.login-title{
+    font-size: 6vh;
+    margin-bottom: 4vh;
+}
+
+.img-adminlogin{
+    width: 60vh;
+    border-radius: 30px;    
+}
+.emailc{
+    height: 50px;
+}
+.usernamec{
+    height: 50px;
+}
+.passwordc{
+    height: 50px;
+}
+
+.admin-login-container{
+    margin-top: 12vh;
+}
+
+.login_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8vh;
+}
+
+.input-box{
+    width: 60vh;
+    margin-bottom: 2vh;
+}
+
+.signup-text-login{
+    margin-top: 1vh;
+}
+
+.remember-me{
+    text-align: left;
+}
+
+.login-form-title{
+    font-size: 3.2vh;
+    margin-bottom: 3vh;
+}
