@@ -8,7 +8,6 @@ function Signup() {
                 <div className="row admin-ragistration-title-row">
                     <div className='Ragistration-title'>Ragistration</div>
                 </div>
-
                 <div className="row signupform">
 
                 <select className='form-select'>
