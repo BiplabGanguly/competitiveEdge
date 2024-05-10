@@ -6,7 +6,7 @@ import AdminLogin from "./containers/AdminLogin";
 import About from "./containers/About.jsx";
 import Nav from "./components/Nav";
 import Signup from "./containers/Signup.jsx";
-
+import FormInstitute from "./containers/FormInstitute.jsx";
 function App() {
   return (
     <div className="App">
@@ -18,6 +18,7 @@ function App() {
           <Route path="/admin-login" element={<AdminLogin/>}/>
           <Route path = "/institute" element ={<Institute/>}/>
           <Route path = "/signup" element={<Signup/>}/>
+          <Route path="/form-institute" element={<FormInstitute/>}/>
         </Routes>
       </Router>
     </div>

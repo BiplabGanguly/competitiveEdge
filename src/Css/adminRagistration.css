@@ -3,9 +3,48 @@
 }
 
 .Ragistration-title{
-    font-size: 4vh;
+    font-size: 5.4vh;
 }
 .signupform{
     width: 800px;
     
+}
+.personal-information{
+    width: 60rem;
+    display: grid;
+    gap: 12px;
+}
+.title-personal-information{
+    text-align: left;
+    font-size: 3.2vh;
+}
+.additional-information{
+    width: 60rem;
+    display: grid;
+    gap: 12px;
+}
+.title-additional-information{
+    text-align: left;
+    font-size: 3.2vh;
+}
+.identity-proof{
+    width: 60rem;
+    display: grid;
+    gap: 12px;
+}
+.title-identity-proof{
+    text-align: left;
+    font-size: 3.2vh;
+}
+.login-credentials{
+    width: 60rem;
+    display: grid;
+    gap: 12px;
+}
+.title-login-credentials1{
+    text-align: left;
+    font-size: 3.2vh;
+}
+.checkbox{
+    text-align: left;
 }
