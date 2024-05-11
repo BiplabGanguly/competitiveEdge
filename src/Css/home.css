@@ -2,9 +2,10 @@
   height: 80vh;
 }
 
-.img-home {
-  width: 80vh;
+
+.img-home{
   height: 80vh;
+  width: 80vh;
 }
 
 .content {
@@ -56,11 +57,11 @@
   display: inline-flex;
 }
 
-.navigate-title{
-    margin-top: 5vh;
-    color: #F0F3FF;
-    font-size: 6vh;
-    margin-bottom: 3vh;
+.navigate-title {
+  margin-top: 5vh;
+  color: #F0F3FF;
+  font-size: 6vh;
+  margin-bottom: 3vh;
 }
 
 .cardbox {
@@ -81,7 +82,7 @@
 
 @media only screen and (max-width: 1000px) {
 
-  [class *= "navigate-container"]{
+  [class *="navigate-container"] {
     margin-top: 24vh;
   }
 }
@@ -91,7 +92,7 @@
     margin-top: 26vh;
   }
 
-  [class *= "navigate-container"]{
+  [class *="navigate-container"] {
     margin-top: 56vh;
   }
 }
@@ -103,7 +104,7 @@
     margin-top: 34vh;
   }
 
-  [class *= "navigate-container"]{
+  [class *="navigate-container"] {
     margin-top: 56vh;
   }
 }

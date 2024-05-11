@@ -14,9 +14,10 @@ function AdminLogin() {
         <div className="col-lg-6 login_form">
           <div className="row">
             <form method="post">
-            <div className="col-md-12 login-form-title">
-             Admin login
-            </div>
+              <div className="col-md-12 login-form-title">
+                Admin login
+              </div>
+              <hr></hr>
               <div className="col-md-12">
                 <input
                   type="email"

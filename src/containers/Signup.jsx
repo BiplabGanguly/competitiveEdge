@@ -7,78 +7,82 @@ function Signup() {
         <>
             <div className="container">
                 <div className="row admin-ragistration-title-row">
-                    <div className='Ragistration-title'>Admin Signup</div>
+                    <div className='Ragistration-title'>Admin Registration</div>
                 </div>
-                <div className="row personal-information">
-
-                    <div className='title-personal-information'>Personal Information</div>
-                    <select className='form-select'>
-                        <option selected>select</option>
-                        <option value="">MR</option>
-                        <option value="">MS</option>
-                        <option value="">MRS</option>
+                <div className="row personal-information d-block mx-auto">
+                    <div className='title-personal-information mb-3'>Personal Information</div>
+                    <hr></hr>
+                    <select className='form-select mb-3'>
+                        <option selected>Title</option>
+                        <option value="">MR.</option>
+                        <option value="">MS.</option>
+                        <option value="">MRS.</option>
                     </select>
-                    <input type="text" className='form-control' placeholder='first name' />
-                    <input type="text" className='form-control' placeholder='last name' />
-                </div>
-                <hr />
-                <div className='row additional-information'>
-                    <div className='title-additional-information'>Additional Information</div>
-                    <input type="text" className='form-control' placeholder='email' />
-                    <input type="text" className='form-control' placeholder='mobile number' />
-                    <input type="date" className='form-control' placeholder='DOB' />
-                    <select className='form-select'>
+                    <input type="text" className='form-control mb-3' placeholder='first name' />
+                    <input type="text" className='form-control mb-3' placeholder='last name' />
+                    <input type="text" className='form-control mb-3' placeholder='email' />
+                    <input type="text" className='form-control mb-3' placeholder='mobile number' />
+                    <input type="date" className='form-control mb-3' placeholder='DOB' />
+                    <select className='form-select mb-5 form-control'>
                         <option selected>select gender</option>
                         <option value="">male</option>
                         <option value="">female</option>
                         <option value="">other</option>
                     </select>
-                    <input type="textarea" className='form-control' placeholder='address' />
-                    <input type="text" className='form-control' placeholder='city' />
-                    <input type="text" className='form-control' placeholder='pin code' />
-                    <input type="text" className='form-control' placeholder='state' />
-                    <input type="text" className='form-control' placeholder='country' />
                 </div>
-                <hr />
-                <div className='row identity-proof'>
-                    <div className='title-identity-proof'>Identity-Proof</div>
-                    <select className='form-select'>
-                        <option selected>select Identity Card</option>
+
+                <div className='row additional-information d-block mx-auto'>
+                    <div className='title-additional-information mb-3'>Additional Information</div>
+                    <hr></hr>
+                    <textarea className='form-control mb-3' placeholder='address' rows={3} ></textarea>
+                    <input type="text" className='form-control mb-3' placeholder='city' />
+                    <input type="text" className='form-control mb-3' placeholder='pin code' />
+                    <input type="text" className='form-control mb-3' placeholder='state' />
+                    <input type="text" className='form-control mb-5' placeholder='country' />
+                </div>
+
+                <div className='row identity-proof d-block mx-auto'>
+                    <div className='title-identity-proof mb-3'>Identity-Proof</div>
+                    <hr></hr>
+                    <select className='form-select form-control mb-3'>
+                        <option selected>select your Identity</option>
                         <option value="">Addhar Card</option>
                         <option value="">Pan Card</option>
                         <option value="">Voter Card</option>
                         <option value="">Driving Licence</option>
                     </select>
-                    <div className='col-2'>
-                    Upload Identity Card
-                    </div>
-                    <div className='col-10'>
-                    <input type="file" className='form-control' placeholder='identity card' />
+                    <div className="row mb-5">
+                        <div className='col-3'>
+                            Upload Identity Card
+                        </div>
+                        <div className='col-9'>
+                            <input type="file" className='form-control' />
+                        </div>
                     </div>
                 </div>
-                <hr />
-                <div className='row login-credentials'>
-                    <div className='title-login-credentials'>Login-Credentials</div>
-                    <input type="text" className='form-control' placeholder='Username' />
-                    <input type="password" className='form-control' placeholder='password' />
-                    <input type="password" className='form-control' placeholder='confirm password' />
-
-
+                <div className='row login-credentials d-block mx-auto'>
+                    <div className='title-login-credentials mb-3'>Login-Credentials</div>
+                    <hr></hr>
+                    <input type="text" className='form-control mb-3' placeholder='Username' />
+                    <input type="password" className='form-control mb-3' placeholder='password' />
+                    <input type="password" className='form-control mb-5' placeholder='confirm password' />
                 </div>
-                <hr />
-                <div className='row'>
-                    <div className='col-12 checkbox'>
+
+
+                <div className='row terms_conditions d-block mx-auto' >
+                    <hr></hr>
+                    <div className='col-12 checkbox mb-3'>
                         <span>
                             terms and condition <input type='checkbox' />
                         </span>
                     </div>
-                    <div className='col-12'>
+                    <div className='col-12 mb-3'>
                         <button type='submit' className='btn btn-home' disabled>Signup</button>
                     </div>
-                    <div className='col-12'>
-                    <span>
-                    Back to {}
-                        <Link to={"/admin-login"}>Sign In</Link>
+                    <div className='col-12 back_to_signin mb-3'>
+                        <span>
+                            Already Signup !! then Back to { }
+                            <Link to={"/admin-login"}>Sign In</Link>
                         </span>
                     </div>
                     <Link to={"/form-institute"}>Institute form</Link>
