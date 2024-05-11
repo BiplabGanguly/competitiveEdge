@@ -1,5 +1,6 @@
 import React from 'react'
 import "../Css/forminstituteStyle.css";
+import { Link } from 'react-router-dom';
 
 
 function FormInstitute(){
@@ -25,6 +26,7 @@ function FormInstitute(){
             <div className='col-10'>
             <input type='text' className='form-control' value={displaytodaysdate} />
             </div>
+            <Link to={"/admin-dashboard"}>Admin dashboard</Link>
         </div>
     </div>
     </>
