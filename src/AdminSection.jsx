@@ -1,16 +1,15 @@
-import React from 'react'
-import AdminDashboard from "./containers/AdminDashboard.jsx";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import AdminDashboard from './containers/AdminDashboard';
 
 function AdminSection() {
     return (
-        <div><Router>
+        <div>
             <Routes>
-
                 <Route path="/admin-dashboard" element={<AdminDashboard />} />
             </Routes>
-        </Router></div>
-    )
+        </div>
+    );
 }
 
-export default AdminSection
+export default AdminSection;
