@@ -6,7 +6,7 @@ function AdminSection() {
     return (
         <div>
             <Routes>
-                <Route path="/admin-dashboard" element={<AdminDashboard />} />
+                <Route path="/admin/dashboard" element={<AdminDashboard />} />
             </Routes>
         </div>
     );

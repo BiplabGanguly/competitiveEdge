@@ -6,7 +6,7 @@ import AdminNav from './AdminNav';
 
 const Nav = () => {
   const location = useLocation();
-  const isPublicRoute = location.pathname !== '/admin-dashboard';
+  const isPublicRoute = !location.pathname.startsWith('/admin/');
 
   return (
     <div>
