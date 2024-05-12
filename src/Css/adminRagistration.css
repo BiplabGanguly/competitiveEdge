@@ -1,11 +1,69 @@
-.admin-ragistration-title-row{
+.admin-ragistration-title-row {
     margin-top: 14vh;
 }
 
-.Ragistration-title{
-    font-size: 4vh;
+.Ragistration-title {
+    font-size: 5.4vh;
 }
-.signupform{
+
+.signupform {
     width: 800px;
-    
+
+}
+
+.personal-information {
+    width: 60rem;
+    padding: 3vh;
+}
+
+.title-personal-information {
+    text-align: left;
+    font-size: 3.2vh;
+}
+
+.additional-information {
+    width: 60rem;
+    display: grid;
+    gap: 12px;
+}
+
+.title-additional-information {
+    text-align: left;
+    font-size: 3.2vh;
+}
+
+.identity-proof {
+    width: 60rem;
+    display: grid;
+    gap: 12px;
+}
+
+.title-identity-proof {
+    text-align: left;
+    font-size: 3.2vh;
+}
+
+.login-credentials {
+    width: 60rem;
+    display: grid;
+    gap: 12px;
+}
+
+.title-login-credentials{
+    text-align: left;
+    font-size: 3.2vh;
+}
+
+.checkbox {
+    text-align: left;
+}
+
+
+.terms_conditions{
+    width: 60rem;
+    display: grid;
+}
+
+.back_to_signin{
+    text-align: left;
 }

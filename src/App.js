@@ -1,24 +1,18 @@
-import "./App.css";
-import Home from "./containers/Home";
-import Institute from "./containers/Institute";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AdminLogin from "./containers/AdminLogin";
-import About from "./containers/About.jsx";
-import Nav from "./components/Nav";
-import Signup from "./containers/Signup.jsx";
+// App.jsx
+import React from 'react';
+import './App.css';
+import PublicSection from './PublicSection';
+import AdminSection from './AdminSection';
+import { BrowserRouter as Router } from "react-router-dom";
+
 
 function App() {
+
   return (
     <div className="App">
       <Router>
-        <Nav />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/About" element={<About/>} />
-          <Route path="/admin-login" element={<AdminLogin/>}/>
-          <Route path = "/institute" element ={<Institute/>}/>
-          <Route path = "/signup" element={<Signup/>}/>
-        </Routes>
+        <PublicSection />
+        <AdminSection />
       </Router>
     </div>
   );
