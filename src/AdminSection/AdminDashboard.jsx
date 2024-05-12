@@ -1,5 +1,6 @@
 import React from 'react'
 import "../Css/admindashboardStyle.css";
+import AdminDashboardInfobox from '../components/AdminDashboardInfobox';
 
 
 function AdminDashboard() {
@@ -15,21 +16,14 @@ function AdminDashboard() {
             </div>
             <div className='row center-content'>
                 <div className='col-md-4 branch-div'>
-                <div className='admin-dashboard-info-box'>
-                    Branches
-                    07
-                    There are 07 Branches present
-                    </div>
+                <AdminDashboardInfobox heading="Branches" infonumber="07" infodata="There are 07 Branches present"/>
                 </div>
                 <div className='col-md-4 faculty-div'>
-                <div className='admin-dashboard-info-box'>
-                    Faculty
-                </div>
+                <AdminDashboardInfobox heading="Faculty" infonumber="07" infodata="There are 07 Branches present"/>
+
                 </div>
                 <div className='col-md-4 student-div'>
-                <div className='admin-dashboard-info-box'>
-                    Student
-                    </div>
+                <AdminDashboardInfobox heading="Student" infonumber="07" infodata="There are 07 Branches present"/>
                 </div>
             </div>
             <div className='row'>

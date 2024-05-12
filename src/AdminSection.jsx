@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import AdminDashboard from './containers/AdminDashboard';
+import AdminDashboard from './AdminSection/AdminDashboard';
 
 function AdminSection() {
     return (
