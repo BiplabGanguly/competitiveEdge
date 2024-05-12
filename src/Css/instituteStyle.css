@@ -1,10 +1,9 @@
-.col-md-6{
+.col-md-6 {
     height: 30vh;
     margin-bottom: 2vh;
 }
 
-.adminsection{
-    /* border: 2px solid rgb(26, 26, 121); */
+.adminsection {
     background-color: transparent;
     max-width: auto;
     height: 80vh;
@@ -12,115 +11,34 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    /* border-radius: 10vh; */
-    /* box-shadow: 10px 8px 10px 5px  #40328d */
+
 }
 
-/* .innerDiv1{
-    border: 2px solid rgb(26, 26, 121);
-    height: 10vh;
-    position: relative;
-    top: 100px;
-    left: 60px;
-    display: flex;
-    border-radius: 5vh;
-    width: 200px;
-    background-color: transparent;
-    margin-bottom: 20px;
-} */
-
-/* .col-md-12{
-    height: 10rem;
-    width: 10rem;
-
-    
-    
-} */
-
-.img-fluid{
+.img-flile {
     height: 20rem;
     width: 20rem;
+
 }
 
-.admin.adminlogin{
+.AdminLogin {
     text-decoration: none;
+    color: rgb(189, 15, 189);
 }
 
-
- /* .innerDiv1 {
-   height: 40px;
-   width: 200px;
-   border: 2px solid rgb(26,26,121); 
-   position: relative;
-   top: 110px;
-   left: 50px;
-   display: flex;
-   border-radius: 2vh;
- } */
-
-    /* .innerDiv1 {
-        border: 2px solid rgb(26, 26, 121);
-        height: 10vh;
-        width: 200px;
-        margin: 20px;
-        position: relative;
-        flex-wrap: wrap;
-        top: 100px;
-        box-sizing: border-box;
-        
-    } */
-    
-
-.innerDiv2{
-    border: 2px solid rgb(26, 26, 121);
-    height: 40px;
+.faculty {
+    text-decoration: none;
+    color: blue;
     position: relative;
-    top: 100px;
-    right: 45px;
-    display: flex;
-    border-radius: 5vh;
-    width: 200px;
-    background-color: transparent;
-    margin-bottom: 20px;
-    box-shadow: 10px 8px 10px 5px  #988dd4
+    left: 50px;
 }
 
-
-
-.innerDiv3{
-    border: 2px solid rgb(26, 26, 121);
-    height: 40px;
-    border-radius: 5vh;
-    width: 200px;
-    position: relative;
-    top: 30px;
-    left: 160px;
-    display: flex;
-    background-color: transparent;
-    box-shadow: 10px 8px 10px 5px  #988dd4
-}
-
-.innerDiv4{
-    border: 2px solid rgb(26, 26, 121);
-    height:40px ;
-    position: relative;
-    top: 100px;
-    right: 155px;
-    display: flex;
-    border-radius: 5vh;
-    width: 200px;
-    background-color: transparent;
-    margin-bottom: 20px;
-    box-shadow: 10px 8px 10px 5px  #988dd4
-}
-
-@media only screen and(max-width: 1200px){
-    [class*= "adminsection"]{
+@media only screen and(max-width: 750px) {
+    [class*="adminsection"] {
         margin-top: 5vh;
     }
 }
 
-.Adminimg{
+.Adminimg {
     width: 100px;
     height: 100px;
     display: flex;
@@ -130,23 +48,10 @@
     left: 70px;
     padding: 2px;
     margin: 5px;
-
-   
-    
-    /* max-width: auto;
-    height: 100px;
-    display: flex; */
-   
-   
     margin-top: 0px;
-    
-
-   
-    
-
 }
 
-.facultimg{
+.facultimg {
     width: 100px;
     height: 100px;
     display: flex;
@@ -156,21 +61,8 @@
     left: 10px;
     padding: 2px;
     margin: 5px;
-
 }
 
-.faculty{
-    color: blue;
-    position: relative;
-    left: 50px;
+.instituterow {
+    margin-top: 1.25vh;
 }
-
-
-
-
-
-.instituterow{
-    margin-top: 28vh;
-
-}
-

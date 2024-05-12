@@ -1,23 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../Css/instituteStyle.css";
-import aboutimg from "../Public/about.png";
+import Admin_Image_in_institute_Page from "../Public/Admin_Image_in_institute_Page.jpg";
+import Faculty_Image_in_institute_Page from "../Public/Faculty_Image_in_institute_Page.png";
 
 function Institute() {
   return (
     <>
       <div className="container maincon">
         <div className="row instituterow">
+
           <div className="col-md-6">
             <div className="adminsection">
               <div className="row">
                 <div className="col-md-12">
-                <img src={aboutimg} alt="about" className="img-fluid" />
-                  <Link to="/admin-login">
-                    <div className="admin">
-                      <h4> Admin Login </h4>
-                    </div>
-                  </Link>
+                  <div className="row mb-3">
+                    <img
+                      src={Admin_Image_in_institute_Page}
+                      alt="Admin"
+                      className="img-flile"
+                    />
+                  </div>
+                  <div className="row mb-5">
+                    <Link className="AdminLogin" to="/admin-login">
+                      <button className="btn btn-home"> Admin </button>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -27,18 +35,23 @@ function Institute() {
             <div className="adminsection">
               <div className="row">
                 <div className="col-md-12">
-                <img src={aboutimg} alt="about" className="img-fluid" />
-                  <Link to="/Faculty_Login">
-                    <div className="faculty">
-                      <h4> Faculty</h4>
-                    </div>
-                  </Link>
+                  <div className="row mb-3">
+                    <img
+                      src={Faculty_Image_in_institute_Page}
+                      alt="Faculty"
+                      className="img-flile"
+                    />
+                  </div>
+                  <div className="row mb-5">
+                    <Link className="faculty" to="/Faculty_Login">
+                      <button className="btn btn-home"> Faculty </button>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-
+          
         </div>
       </div>
     </>
