@@ -1,4 +1,13 @@
-.button-control{
-    text-align: right;
-    height: 200px;
+
+.admin-dashboard-info-box{
+    background-color: blue;
+    height: 22vh;
+    margin: 0 2vh 3vh 2vh;
+    border-radius: 3vh;
+}
+.center-content{
+    height: 30vh;
+}
+.upper-content{
+    height: 20vh;
 }
