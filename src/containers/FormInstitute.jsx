@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function FormInstitute() {
     var showdate = new Date();
-    var displaytodaysdate = showdate.getDate() + '/' + showdate.getMonth() + '/' + showdate.getFullYear();
+    var displaytodaysdate = showdate.getDate() + '/' + (showdate.getMonth()+1) + '/' + showdate.getFullYear();
     return (
         <>
             <div className='container'>
