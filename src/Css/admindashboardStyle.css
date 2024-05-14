@@ -1,16 +1,18 @@
-
-.admin-dashboard-info-box{
+.admin-dashboard-info-box {
     background-color: blue;
     height: 25vh;
     margin: 0 2vh 3vh 2vh;
     border-radius: 3vh;
 }
-.center-content{
+
+.center-content {
     height: 30vh;
 }
-.upper-content{
+
+.upper-content {
     height: 20vh;
 }
-.upper-content{
+
+.upper-content {
     margin-top: 5vh;
 }

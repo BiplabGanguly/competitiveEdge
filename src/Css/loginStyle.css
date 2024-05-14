@@ -1,51 +1,54 @@
-.admin-login-title-row{
+.admin-login-title-row {
     margin-top: 14vh;
 }
 
-.login-title{
+.login-title {
     font-size: 6vh;
     margin-bottom: 4vh;
 }
 
-.img-adminlogin{
+.img-adminlogin {
     width: 60vh;
-    border-radius: 30px;    
+    border-radius: 30px;
 }
-.emailc{
-    height: 50px;
-}
-.usernamec{
-    height: 50px;
-}
-.passwordc{
+
+.emailc {
     height: 50px;
 }
 
-.admin-login-container{
+.usernamec {
+    height: 50px;
+}
+
+.passwordc {
+    height: 50px;
+}
+
+.admin-login-container {
     margin-top: 12vh;
 }
 
-.login_form{
+.login_form {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 8vh;
 }
 
-.input-box{
+.input-box {
     width: 60vh;
     margin-bottom: 2vh;
 }
 
-.signup-text-login{
+.signup-text-login {
     margin-top: 1vh;
 }
 
-.remember-me{
+.remember-me {
     text-align: left;
 }
 
-.login-form-title{
+.login-form-title {
     font-size: 3.2vh;
     margin-bottom: 3vh;
 }

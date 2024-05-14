@@ -9,7 +9,6 @@ function Institute() {
     <>
       <div className="container maincon">
         <div className="row instituterow">
-
           <div className="col-md-6">
             <div className="adminsection">
               <div className="row">
@@ -51,7 +50,6 @@ function Institute() {
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </>

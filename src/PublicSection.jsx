@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Home from "./containers/Home";
 import Institute from "./containers/Institute";
 import { Routes, Route } from "react-router-dom";
@@ -7,7 +7,6 @@ import About from "./containers/About.jsx";
 import Nav from "./components/Nav";
 import Signup from "./containers/Signup.jsx";
 import FormInstitute from "./containers/FormInstitute.jsx";
-
 
 function PublicSection() {
   return (
@@ -22,7 +21,7 @@ function PublicSection() {
         <Route path="/form-institute" element={<FormInstitute />} />
       </Routes>
     </div>
-  )
+  );
 }
 
-export default PublicSection
+export default PublicSection;

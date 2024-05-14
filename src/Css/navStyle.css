@@ -23,6 +23,7 @@
     font-family: cursive;
     letter-spacing: .3px;
 }
+
 .navbar-brand:hover {
     color: #F0F3FF;
 }
@@ -31,11 +32,21 @@
     color: #15F5BA;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     box-shadow: 0px 0px 8px #836FFF;
     background-color: #836FFF;
 }
 
-.navbar-toggler:focus{
+.navbar-toggler:focus {
     box-shadow: 0px 0px 8px #836FFF;
+}
+
+
+.dropdown-menu {
+    background-color: #211951;
+
+}
+
+.dropdown-item {
+    color: #F0F3FF;
 }

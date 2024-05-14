@@ -15,14 +15,15 @@ function About() {
           <div className="col-md-6">
             <div className="about-col-content">
               <div className="about-title">About</div>
-              <div className="about-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quae aut at provident aliquam fugit. Debitis quasi obcaecati
-                deserunt repudiandae nulla asperiores optio nam voluptatem hic,
-                ex vero doloribus earum facere.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Dignissimos quisquam optio error praesentium accusantium aliquid
-                minus quae similique tempora dicta dolorum et, laborum corrupti ea eum officia esse.
-                Assumenda, praesentium?
+              <div className="about-para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
+                aut at provident aliquam fugit. Debitis quasi obcaecati deserunt
+                repudiandae nulla asperiores optio nam voluptatem hic, ex vero
+                doloribus earum facere. Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Dignissimos quisquam optio error praesentium
+                accusantium aliquid minus quae similique tempora dicta dolorum
+                et, laborum corrupti ea eum officia esse. Assumenda,
+                praesentium?
               </div>
             </div>
           </div>
@@ -31,16 +32,15 @@ function About() {
               <div className="about-lower-content">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Dignissimos quisquam optio error praesentium accusantium aliquid
-                minus quae similique tempora dicta dolorum et, laborum corrupti ea eum officia esse.
-                Assumenda, praesentium?
+                minus quae similique tempora dicta dolorum et, laborum corrupti
+                ea eum officia esse. Assumenda, praesentium?
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </>
-  )
+  );
 }
 
 export default About;

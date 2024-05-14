@@ -4,7 +4,6 @@ import AdminBranchInformation from "../components/AdminBranchInformation";
 
 function AdminBranch() {
   return (
-
     <div className="BranchDiv">
       <div className="row">
         <div className="col-md-4">
@@ -18,7 +17,6 @@ function AdminBranch() {
         <div className="col-md-4">
           <AdminBranchInformation branches="Branch 3" />
         </div>
-        
       </div>
     </div>
   );

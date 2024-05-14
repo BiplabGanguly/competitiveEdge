@@ -1,10 +1,12 @@
-.admin-institute-title{
+.admin-institute-title {
     margin-top: 13vh;
 }
-.institute-title{
+
+.institute-title {
     font-size: 5.4vh;
 }
-.all-information{
+
+.all-information {
     width: 60rem;
     display: grid;
     gap: 12px;

@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function AdminBranchInformation(props) {
-  return (
-    <div className='admin_branch_information'>
-      {props.branches}
-    </div>
-  )
+  return <div className="admin_branch_information">{props.branches}</div>;
 }
 
-export default AdminBranchInformation
+export default AdminBranchInformation;
