@@ -4,7 +4,7 @@ export default function AdminDashboardTable() {
   return (
     <div className='row'>
       <div className='table-responsive'>
-                    <table className='table table-bordered table-striped table-hover table-sm'>
+                    <table className='table table-bordered table-striped table-hover'>
                         <thead className='thead-dark'>
                             <tr>
                                 <th>Faculty Id</th>
