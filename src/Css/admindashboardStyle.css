@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .admin-dashboard-info-box {
     background-color: blue;
     height: 25vh;
@@ -12,7 +11,7 @@
 
 .upper-content {
     height: 20vh;
-=======
+}
 
 .admin-dashboard-info-box{
     height: 20vh;
@@ -31,13 +30,11 @@
 }
 .center-content{
     height: 26vh;
->>>>>>> e0c729597730d65c3d9c1ae5157a136ab7301800
+
 }
 
 .upper-content {
     margin-top: 5vh;
-<<<<<<< HEAD
-=======
     height: 14vh;
 }
 .admin-branch-btn{
@@ -59,5 +56,4 @@
 }
 .center-div-infonumber-content{
     margin-bottom: 22px;
->>>>>>> e0c729597730d65c3d9c1ae5157a136ab7301800
 }
