@@ -8,7 +8,7 @@ function AdminDashboard() {
   return (
     <div className="container">
       <div className="row upper-content">
-        <div className="col-md-3 admin-branch-button offset-md-6">
+        <div className="col-md-9 admin-branch-button offset-md-2">
           <Link to="/admin/adminbranch"> 
             <button type="submit" className="btn admin-branch-btn">
               Branch
@@ -16,11 +16,6 @@ function AdminDashboard() {
           </Link>
         </div>
 
-        <div className="col-md-3 admin-permission-button">
-          <button type="submit" className="btn admin-branch-btn">
-            Permission 05
-          </button>
-        </div>
       </div>
       <div className="row center-content">
         <div className="col-md-4 branch-div">

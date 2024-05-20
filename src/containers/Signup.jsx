@@ -88,10 +88,9 @@ function Signup() {
             <option value="">Driving Licence</option>
           </select>
           <div className="row mb-5">
-            <div className="col-3">Upload Identity Card</div>
-            <div className="col-9">
-              <input type="file" className="form-control" />
-            </div>
+            
+            <input type="text" className="form-control mb-3" placeholder="Identity number"/>
+            
           </div>
         </div>
         <div className="row login-credentials d-block mx-auto">
@@ -132,7 +131,7 @@ function Signup() {
               <Link to={"/admin-login"}>Sign In</Link>
             </span>
           </div>
-          <Link to={"/form-institute"}>Institute form</Link>
+          <Link to={"/admin/dashboard"}>Admin dashboard</Link>
         </div>
       </div>
     </>
