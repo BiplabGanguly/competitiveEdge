@@ -131,7 +131,7 @@ function Signup() {
               <Link to={"/admin-login"}>Sign In</Link>
             </span>
           </div>
-          <Link to={"/form-institute"}>Institute form</Link>
+          <Link to={"/admin/dashboard"}>Admin dashboard</Link>
         </div>
       </div>
     </>
