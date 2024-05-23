@@ -117,7 +117,7 @@ function Signup() {
           <hr></hr>
           <div className="col-12 checkbox mb-3">
             <span>
-              terms and condition <input type="checkbox" />
+              terms and condition <input type="checkbox" className="form-check-input" />
             </span>
           </div>
           <div className="col-12 mb-3">
@@ -131,7 +131,6 @@ function Signup() {
               <Link to={"/admin-login"}>Sign In</Link>
             </span>
           </div>
-          <Link to={"/admin/dashboard"}>Admin dashboard</Link>
         </div>
       </div>
     </>

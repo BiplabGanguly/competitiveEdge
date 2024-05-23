@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Css/admindashboardStyle.css";
 import AdminDashboardInfobox from "../components/AdminDashboardInfobox";
 import { Link } from "react-router-dom";
 import AdminDashboardTable from "../components/AdminDashboardTable";
+import { fetchTotalFaculty,fetchTotalBranch } from "./FetchAdminData";
 
 function AdminDashboard() {
+
+  const [totalFaculty, setTotalFaculty] = useState(0);
+  const [totalBranch, setTotalBranch] = useState(0);
+
+
+  const infodatafaculty = `There are ${totalFaculty} faculties present`;
+  const infodatabranch = `There are ${totalBranch} branches present`;
+  useEffect(()=>{
+    fetchTotalFaculty(setTotalFaculty);
+    fetchTotalBranch(setTotalBranch);
+  },[])
   return (
     <div className="container">
       <div className="row upper-content">
@@ -21,15 +33,15 @@ function AdminDashboard() {
         <div className="col-md-4 branch-div">
           <AdminDashboardInfobox
             heading="Branches"
-            infonumber="07"
-            infodata="There are 07 Branches present"
+            infonumber={totalBranch}
+            infodata={infodatabranch}
           />
         </div>
         <div className="col-md-4 faculty-div">
           <AdminDashboardInfobox
             heading="Faculty"
-            infonumber="07"
-            infodata="There are 07 Branches present"
+            infonumber={totalFaculty}
+            infodata={infodatafaculty}
           />
         </div>
         <div className="col-md-4 student-div">

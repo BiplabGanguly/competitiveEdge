@@ -1,8 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../Css/navStyle.css";
 
 function Nav() {
+  const admin_name = localStorage.getItem("admin_name");
+  const navigate =  useNavigate();
+
+  const Signout = () =>{
+    navigate('/admin-login');
+    localStorage.clear();
+  }
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
@@ -28,27 +35,16 @@ function Nav() {
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Bapan Dutta
+            {admin_name}
           </button>
 
           <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="#">
-                Profile
-              </a>
-            </li>
+            <li>Profile</li>
+
+            <li>Institute</li>
 
             <li>
-              <a class="dropdown-item" href="#">
-                Institute
-              </a>
-            </li>
-
-            <li>
-              <a class="dropdown-item" href="#">
-                Sign Out
-              </a>
-            </li>
+              <button onClick={Signout} className="btn btn-outline-light">Sign Out</button></li>
           </ul>
         </div>
       </div>
