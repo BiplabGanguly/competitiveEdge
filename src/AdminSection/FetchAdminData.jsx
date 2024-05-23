@@ -1,5 +1,5 @@
-const url1 = 'http://127.0.0.1:8000/user/';
-const url2 = "http://127.0.0.1:8000/institute/";
+const url1 = 'https://competitiveedge-django.onrender.com/user/';
+const url2 = "https://competitiveedge-django.onrender.com/institute/";
 
 
 const fetchTotalFaculty = async (setData) => {
