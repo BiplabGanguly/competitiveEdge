@@ -88,10 +88,9 @@ function Signup() {
             <option value="">Driving Licence</option>
           </select>
           <div className="row mb-5">
-            <div className="col-3">Upload Identity Card</div>
-            <div className="col-9">
-              <input type="file" className="form-control" />
-            </div>
+            
+            <input type="text" className="form-control mb-3" placeholder="Identity number"/>
+            
           </div>
         </div>
         <div className="row login-credentials d-block mx-auto">
@@ -118,7 +117,7 @@ function Signup() {
           <hr></hr>
           <div className="col-12 checkbox mb-3">
             <span>
-              terms and condition <input type="checkbox" />
+              terms and condition <input type="checkbox" className="form-check-input" />
             </span>
           </div>
           <div className="col-12 mb-3">
@@ -132,7 +131,6 @@ function Signup() {
               <Link to={"/admin-login"}>Sign In</Link>
             </span>
           </div>
-          <Link to={"/form-institute"}>Institute form</Link>
         </div>
       </div>
     </>

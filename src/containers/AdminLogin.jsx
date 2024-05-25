@@ -1,9 +1,46 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "../Css/loginStyle.css";
 import adminloginimg from "../Public/adminLogin.jpg";
 
 function AdminLogin() {
+  const [email,setEmail] = useState('john.doe@gmail.com');
+  const [username,setUsername] = useState("johndoe");
+  const [password,setPassword] = useState("StrongP@ssw0rd");
+
+  const navigate = useNavigate();
+
+  const AdminLoginFrom =async(e)=>{
+  e.preventDefault();
+
+    try {
+      const response = await fetch('https://competitiveedge-django.onrender.com/user/admin-signin/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          email: email,
+          username: username,
+          password: password
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const data = await response.json();
+      localStorage.setItem("admin_name",data.admin_username);
+      localStorage.setItem("admin_token",data.token);
+      localStorage.setItem("admin_permission",data.admin_permission);
+      console.log('Response:', data);
+      navigate('/admin/dashboard');
+    } catch (error) {
+      alert('There was an error!', error);
+    }
+  }
+
   return (
     <div className="container admin-login-container">
       <div className="row">
@@ -13,7 +50,7 @@ function AdminLogin() {
       <div className="row login_row">
         <div className="col-lg-6 login_form">
           <div className="row">
-            <form method="post">
+            <form onSubmit={AdminLoginFrom}>
               <div className="col-md-12 login-form-title">Admin login</div>
               <hr></hr>
               <div className="col-md-12">
@@ -21,6 +58,8 @@ function AdminLogin() {
                   type="email"
                   className="form-control input-box"
                   placeholder="email"
+                  value={email}
+                  onChange={(e)=>setEmail(e.target.value)}
                 />
               </div>
               <div className="col-md-12">
@@ -28,6 +67,8 @@ function AdminLogin() {
                   type="text"
                   className="form-control input-box"
                   placeholder="username"
+                  value={username}
+                  onChange={(e)=>setUsername(e.target.value)}
                 />
               </div>
               <div className="col-md-12">
@@ -35,12 +76,9 @@ function AdminLogin() {
                   type="password"
                   className="form-control input-box"
                   placeholder="Password"
+                  value={password}
+                  onChange={(e)=>setPassword(e.target.value)}
                 />
-              </div>
-              <div className="col-md-12 remember-me">
-                <span>
-                  remember me <input type="checkbox" className="from-control" />
-                </span>
               </div>
               <div className="col-md-12">
                 <button type="submit" className="btn btn-home">
