@@ -1,20 +1,4 @@
-<<<<<<< HEAD
 .admin-dashboard-info-box {
-    background-color: blue;
-    height: 25vh;
-    margin: 0 2vh 3vh 2vh;
-    border-radius: 3vh;
-}
-
-.center-content {
-    height: 30vh;
-}
-
-.upper-content {
-    height: 20vh;
-=======
-
-.admin-dashboard-info-box{
     height: 20vh;
     border: 1px solid white;
     display: flex;
@@ -25,39 +9,42 @@
     background-color: #836fff;
     color: white;
 }
-.admin-branch-button{
+
+.admin-branch-button {
     display: flex;
     justify-content: right;
 }
-.center-content{
+
+.center-content {
     height: 26vh;
->>>>>>> e0c729597730d65c3d9c1ae5157a136ab7301800
 }
 
 .upper-content {
     margin-top: 5vh;
-<<<<<<< HEAD
-=======
     height: 14vh;
 }
-.admin-branch-btn{
-  width: 32vh;
-  text-align: center;
-  border: 1px solid #836fff;
-  color: #836fff;
-  margin-top: 8px;
-  box-shadow: 0 0 8px #836fff;
+
+.admin-branch-btn {
+    width: 32vh;
+    text-align: center;
+    border: 1px solid #836fff;
+    color: #836fff;
+    margin-top: 8px;
+    box-shadow: 0 0 8px #836fff;
 }
-.admin-permission-button{
+
+.admin-permission-button {
     display: block;
 }
-.admin-branch-btn{
+
+.admin-branch-btn {
     float: left;
 }
-.center-div-heading-content{
+
+.center-div-heading-content {
     margin-bottom: 22px;
 }
-.center-div-infonumber-content{
+
+.center-div-infonumber-content {
     margin-bottom: 22px;
->>>>>>> e0c729597730d65c3d9c1ae5157a136ab7301800
 }
