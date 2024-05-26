@@ -4,9 +4,9 @@ import "../Css/navStyle.css";
 
 function Nav() {
   const admin_name = localStorage.getItem("admin_name");
-  const navigate =  useNavigate();
+  const navigate = useNavigate();
 
-  const Signout = () =>{
+  const Signout = () => {
     navigate('/admin-login');
     localStorage.clear();
   }
@@ -16,17 +16,6 @@ function Nav() {
         <Link className="navbar-brand" to="/">
           Competitive Edge
         </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
 
         <div class="dropdown me-4">
           <button
@@ -40,13 +29,21 @@ function Nav() {
 
           <ul class="dropdown-menu">
             <li>Profile</li>
-
-            <li>Institute</li>
-
             <li>
               <button onClick={Signout} className="btn btn-outline-light">Sign Out</button></li>
           </ul>
         </div>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
       </div>
     </nav>
   );

@@ -2,19 +2,20 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../Css/loginStyle.css";
 import adminloginimg from "../Public/adminLogin.jpg";
+import baseURL from "../BaseURL";
 
 function AdminLogin() {
-  const [email,setEmail] = useState('john.doe@gmail.com');
-  const [username,setUsername] = useState("johndoe");
-  const [password,setPassword] = useState("StrongP@ssw0rd");
+  const [email, setEmail] = useState('john.doe@gmail.com');
+  const [username, setUsername] = useState("johndoe");
+  const [password, setPassword] = useState("StrongP@ssw0rd");
 
   const navigate = useNavigate();
 
-  const AdminLoginFrom =async(e)=>{
-  e.preventDefault();
+  const AdminLoginFrom = async (e) => {
+    e.preventDefault();
 
     try {
-      const response = await fetch('https://competitiveedge-django.onrender.com/user/admin-signin/', {
+      const response = await fetch(`${baseURL}/user/admin-signin/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -31,9 +32,9 @@ function AdminLogin() {
       }
 
       const data = await response.json();
-      localStorage.setItem("admin_name",data.admin_username);
-      localStorage.setItem("admin_token",data.token);
-      localStorage.setItem("admin_permission",data.admin_permission);
+      localStorage.setItem("admin_name", data.admin_username);
+      localStorage.setItem("admin_token", data.token);
+      localStorage.setItem("admin_permission", data.admin_permission);
       console.log('Response:', data);
       navigate('/admin/dashboard');
     } catch (error) {
@@ -59,7 +60,7 @@ function AdminLogin() {
                   className="form-control input-box"
                   placeholder="email"
                   value={email}
-                  onChange={(e)=>setEmail(e.target.value)}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <div className="col-md-12">
@@ -68,7 +69,7 @@ function AdminLogin() {
                   className="form-control input-box"
                   placeholder="username"
                   value={username}
-                  onChange={(e)=>setUsername(e.target.value)}
+                  onChange={(e) => setUsername(e.target.value)}
                 />
               </div>
               <div className="col-md-12">
@@ -77,7 +78,7 @@ function AdminLogin() {
                   className="form-control input-box"
                   placeholder="Password"
                   value={password}
-                  onChange={(e)=>setPassword(e.target.value)}
+                  onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
               <div className="col-md-12">

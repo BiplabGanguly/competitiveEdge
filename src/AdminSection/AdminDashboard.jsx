@@ -3,7 +3,7 @@ import "../Css/admindashboardStyle.css";
 import AdminDashboardInfobox from "../components/AdminDashboardInfobox";
 import { Link } from "react-router-dom";
 import AdminDashboardTable from "../components/AdminDashboardTable";
-import { fetchTotalFaculty,fetchTotalBranch } from "./FetchAdminData";
+import { fetchTotalFaculty, fetchTotalBranch } from "./FetchAdminData";
 
 function AdminDashboard() {
 
@@ -13,17 +13,17 @@ function AdminDashboard() {
 
   const infodatafaculty = `There are ${totalFaculty} faculties present`;
   const infodatabranch = `There are ${totalBranch} branches present`;
-  useEffect(()=>{
+  useEffect(() => {
     fetchTotalFaculty(setTotalFaculty);
     fetchTotalBranch(setTotalBranch);
-  },[])
+  }, [])
   return (
     <div className="container">
       <div className="row upper-content">
         <div className="col-md-9 admin-branch-button offset-md-2">
-          <Link to="/admin/adminbranch"> 
+          <Link to="/admin/adminbranch">
             <button type="submit" className="btn admin-branch-btn">
-              Branch
+              Exams
             </button>
           </Link>
         </div>
