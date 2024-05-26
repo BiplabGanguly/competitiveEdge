@@ -1,0 +1,44 @@
+.loading-bar-container {
+    width: 100%;
+    height: 10px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.loading-bar {
+    width: 0;
+    height: 100%;
+    background-color: #836fff;
+    animation: fillBar 2s ease-in-out infinite;
+}
+
+@keyframes fillBar {
+    0% {
+        width: 0;
+        background-color: green;
+    }
+
+    25% {
+        width: 50%;
+        background-color: green;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    75% {
+        width: 50%;
+        background-color: #836fff;
+    }
+
+    100% {
+        width: 0;
+        background-color: #836fff;
+    }
+}

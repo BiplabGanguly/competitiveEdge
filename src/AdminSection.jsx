@@ -2,17 +2,18 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import AdminDashboard from "./AdminSection/AdminDashboard";
 import AdminBranch from "./AdminSection/AdminBranch";
-import AdminDashbordProfile from "./components/AdminDashbordProfile";
-import AdminDashboardInstitute from "./components/AdminDashboardInstitute";
+import AdminRoute from "./AdminSection/AdminRoute";
+import AdminExamDash from "./ExamComponents/AdminExamDash";
 
 function AdminSection() {
   return (
     <div>
       <Routes>
-        <Route path="/admin/dashboard" element={<AdminDashboard />} />
-        <Route path="/admin/adminbranch" element={<AdminBranch />} />
-        <Route path="/admin/admindashbordprofile" element={<AdminDashbordProfile/>} />
-        <Route path="/admin/admindashboardinstitute" element={<AdminDashboardInstitute />} />
+        <Route path="/admin" element={<AdminRoute />}>
+          <Route path="dashboard" element={<AdminDashboard />} />
+          <Route path="/admin/adminbranch" element={<AdminBranch />} />
+          <Route path="examdash" element={<AdminExamDash />} />
+        </Route>
       </Routes>
     </div>
   );

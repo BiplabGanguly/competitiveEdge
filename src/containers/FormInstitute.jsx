@@ -24,12 +24,7 @@ function FormInstitute() {
           <input
             type="text"
             className="form-control mb-3"
-            placeholder="Tagline"
-          />
-          <input
-            type="text"
-            className="form-control mb-3"
-            placeholder="Headline"
+            placeholder="Headline/Tagline"
           />
           <input
             type="text"

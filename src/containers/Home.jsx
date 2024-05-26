@@ -42,7 +42,7 @@ function Home() {
       </div>
       <div className="container-fluid navigate-container">
         <div className="row">
-          <h2 className="navigate-title">Our Institutes</h2>
+          <h2 className="navigate-title">Our Branches</h2>
         </div>
         <InstituteNavigate />
       </div>
