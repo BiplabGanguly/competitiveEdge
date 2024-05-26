@@ -27,14 +27,15 @@ function AdminDashboard() {
     <div className="container mb-4">
       <div className="row upper-content">
         <div className="col-md-9 admin-branch-button offset-md-2">
-          <Link to="">
+          <Link to="/admin/examdash">
             <button type="submit" className="btn admin-branch-btn">
               Exams
             </button>
           </Link>
         </div>
-
       </div>
+
+
       <div className="row">
         <span className="dashboardinfo">Dashboard Info</span>
       </div>
