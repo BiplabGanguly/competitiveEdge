@@ -37,13 +37,26 @@ const fetchAllBranchDetails = async (setData) => {
       throw new Error('Failed to fetch');
     }
     const data = await response.json();
-    // console.log(data)
     setData(data.all_branches);
   } catch (error) {
     console.error('Error fetching total faculty:', error);
   }
 }
 
-export { fetchTotalFaculty, fetchTotalBranch, fetchAllBranchDetails };
+
+const fetchAllFacultyDetails = async (setData) => {
+  try {
+    const response = await fetch(`${baseURL}/user/faculty-details/`);
+    if (!response.ok) {
+      throw new Error('Failed to fetch');
+    }
+    const data = await response.json();
+    setData(data)
+  } catch (error) {
+    console.error('Error fetching faculty details:', error);
+  }
+}
+
+export { fetchTotalFaculty, fetchTotalBranch, fetchAllBranchDetails, fetchAllFacultyDetails };
 
 

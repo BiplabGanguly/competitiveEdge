@@ -3,12 +3,13 @@ import "../Css/admindashboardStyle.css";
 import AdminDashboardInfobox from "../components/AdminDashboardInfobox";
 import { Link } from "react-router-dom";
 import AdminDashboardTable from "../components/AdminDashboardTable";
-import { fetchTotalFaculty, fetchTotalBranch } from "./FetchAdminData";
+import { fetchTotalFaculty, fetchTotalBranch, fetchAllFacultyDetails } from "./FetchAdminData";
 
 function AdminDashboard() {
 
   const [totalFaculty, setTotalFaculty] = useState(0);
   const [totalBranch, setTotalBranch] = useState(0);
+  const [facultyDetails, setFacultyDetails] = useState([]);
 
 
   const infodatafaculty = `There are ${totalFaculty} faculties present`;
@@ -16,7 +17,11 @@ function AdminDashboard() {
   useEffect(() => {
     fetchTotalFaculty(setTotalFaculty);
     fetchTotalBranch(setTotalBranch);
+    fetchAllFacultyDetails(setFacultyDetails);
   }, [])
+
+
+
   return (
     <div className="container">
       <div className="row upper-content">
@@ -53,7 +58,7 @@ function AdminDashboard() {
         </div>
       </div>
       <div className="row mt-5">
-        <AdminDashboardTable />
+        <AdminDashboardTable tabledata={facultyDetails} />
       </div>
     </div>
   );

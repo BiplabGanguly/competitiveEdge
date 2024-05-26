@@ -5,12 +5,13 @@ function AdminRoute() {
     const navigate = useNavigate();
     const admin_token = localStorage.getItem('admin_token');
     const admin_permission = localStorage.getItem('admin_permission');
+    const admin_profile = localStorage.getItem("admin_profile");
 
     useEffect(() => {
-        if (!isValidAdminToken(admin_token) || !isValidAdminPermission(admin_permission)) {
+        if (!isValidAdminToken(admin_token) || !isValidAdminPermission(admin_permission) || !isVaildAdminProfile(admin_profile)) {
             navigate('/admin-login');
         }
-    }, [admin_token, admin_permission, navigate]);
+    }, [admin_token, admin_permission, navigate, admin_profile]);
 
     // Function to validate admin_token
     const isValidAdminToken = (token) => {
@@ -24,7 +25,11 @@ function AdminRoute() {
         return permission === 'accept'; // Example: Checking if permission is 'accept'
     };
 
-    return admin_token && admin_permission === 'accept' ? <Outlet /> : null;
+    const isVaildAdminProfile = (profile) => {
+        return profile === 'faculty';
+    }
+
+    return admin_token && admin_permission === 'accept' && admin_profile === 'faculty' ? <Outlet /> : null;
 }
 
 export default AdminRoute;
