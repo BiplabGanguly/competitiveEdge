@@ -32,17 +32,21 @@ function Nav() {
           </button>
 
           <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="#">
-                Profile
-              </a>
-            </li>
+            <Link to="/admin/admindashbordprofile">
+              <li>
+                <a class="dropdown-item" href="#">
+                  Profile
+                </a>
+              </li>
+            </Link>
 
-            <li>
-              <a class="dropdown-item" href="#">
-                Institute
-              </a>
-            </li>
+            <Link to="/admin/admindashboardinstitute">
+              <li>
+                <a class="dropdown-item" href="#">
+                  Institute
+                </a>
+              </li>
+            </Link>
 
             <li>
               <a class="dropdown-item" href="#">

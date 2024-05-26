@@ -7,15 +7,15 @@ function AdminBranch() {
     <div className="BranchDiv">
       <div className="row">
         <div className="col-md-4">
-          <AdminBranchInformation branches="Branch 1" />
+          <AdminBranchInformation branches="Branches" />
         </div>
 
         <div className="col-md-4">
-          <AdminBranchInformation branches="Branch 2" />
+          <AdminBranchInformation branches="Faculty" />
         </div>
 
         <div className="col-md-4">
-          <AdminBranchInformation branches="Branch 3" />
+          <AdminBranchInformation branches="Student" />
         </div>
       </div>
     </div>
