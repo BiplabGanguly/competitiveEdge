@@ -13,7 +13,6 @@ function AdminSection() {
           <Route path="dashboard" element={<AdminDashboard />} />
           <Route path="/admin/adminbranch" element={<AdminBranch />} />
           <Route path="examdash" element={<AdminExamDash />} />
-
         </Route>
       </Routes>
     </div>

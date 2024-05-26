@@ -37,7 +37,10 @@ function AdminLogin() {
       localStorage.setItem("admin_permission", data.admin_permission);
       localStorage.setItem("admin_profile", data.admin_profile);
       console.log('Response:', data);
-      navigate('/admin/dashboard');
+      setTimeout(() => {
+        navigate('/admin/dashboard');
+      }, 2000);
+
     } catch (error) {
       alert('There was an error!', error);
     }
