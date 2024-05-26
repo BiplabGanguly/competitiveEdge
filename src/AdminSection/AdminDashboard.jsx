@@ -58,7 +58,7 @@ function AdminDashboard() {
         </div>
       </div>
       <div className="row mt-5">
-        <AdminDashboardTable tabledata={facultyDetails} />
+        <AdminDashboardTable tabledata={facultyDetails.faculty_details} />
       </div>
     </div>
   );

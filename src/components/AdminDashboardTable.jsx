@@ -2,6 +2,9 @@ import React from 'react'
 
 function AdminDashboardTable(props) {
     console.log(props.tabledata)
+    const tableDataArray = props.tabledata && typeof props.tabledata === 'object'
+        ? Object.values(props.tabledata)
+        : [];
     return (
         <div className='row'>
             <div className='table-responsive'>
@@ -15,12 +18,18 @@ function AdminDashboardTable(props) {
                         </tr>
                     </thead>
                     <tbody>
-                        {props.tabledata && props.tabledata.faculty_details && props.tabledata.faculty_details.length > 0 && (
+                        {tableDataArray.length > 0 ? (
+                            tableDataArray.map((data, index) => (
+                                <tr key={index}>
+                                    <td>{`sn220${data.user.id}h`}</td>
+                                    <td>{`${data.user.first_name} ${data.user.last_name}`}</td>
+                                    <td>{data.user.email}</td>
+                                    <td>{data.profile}</td>
+                                </tr>
+                            ))
+                        ) : (
                             <tr>
-                                <td>sn220{props.tabledata.faculty_details[0].user.id}h</td>
-                                <td>{`${props.tabledata.faculty_details[0].user.first_name} ${props.tabledata.faculty_details[0].user.last_name}`}</td>
-                                <td>{props.tabledata.faculty_details[0].user.email}</td>
-                                <td>{props.tabledata.faculty_details[0].profile}</td>
+                                <td colSpan="5">No data available</td>
                             </tr>
                         )}
                     </tbody>
