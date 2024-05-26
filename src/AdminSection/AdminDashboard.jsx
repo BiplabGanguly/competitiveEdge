@@ -4,6 +4,7 @@ import AdminDashboardInfobox from "../components/AdminDashboardInfobox";
 import { Link } from "react-router-dom";
 import AdminDashboardTable from "../components/AdminDashboardTable";
 import { fetchTotalFaculty, fetchTotalBranch, fetchAllFacultyDetails } from "./FetchAdminData";
+import AdminBranch from "./AdminBranch";
 
 function AdminDashboard() {
 
@@ -23,16 +24,19 @@ function AdminDashboard() {
 
 
   return (
-    <div className="container">
+    <div className="container mb-4">
       <div className="row upper-content">
         <div className="col-md-9 admin-branch-button offset-md-2">
-          <Link to="/admin/adminbranch">
+          <Link to="">
             <button type="submit" className="btn admin-branch-btn">
               Exams
             </button>
           </Link>
         </div>
 
+      </div>
+      <div className="row">
+        <span className="dashboardinfo">Dashboard Info</span>
       </div>
       <div className="row center-content">
         <div className="col-md-4 branch-div">
@@ -57,10 +61,19 @@ function AdminDashboard() {
           />
         </div>
       </div>
-      <div className="row mt-5">
+      <hr />
+      <div className="row">
+        <div className="dashboardinfo">Your Branches</div>
+      </div>
+      <div className="row"><AdminBranch /></div>
+      <hr />
+      <div className="row">
+        <div className="dashboardinfo">Faculty Details</div>
+      </div>
+      <div className="row">
         <AdminDashboardTable tabledata={facultyDetails.faculty_details} />
       </div>
-    </div>
+    </div >
   );
 }
 

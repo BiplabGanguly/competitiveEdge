@@ -14,7 +14,7 @@
 
 }
 
-.admin-dashboard-info-box{
+.admin-dashboard-info-box {
     height: 20vh;
     border: 1px solid white;
     display: flex;
@@ -63,4 +63,10 @@
 
 .center-div-infonumber-content {
     margin-bottom: 22px;
+}
+
+
+.dashboardinfo {
+    text-align: left;
+    margin-bottom: 4vh;
 }

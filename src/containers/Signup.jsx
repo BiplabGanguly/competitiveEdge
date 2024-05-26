@@ -16,9 +16,9 @@ function Signup() {
           <hr></hr>
           <select className="form-select mb-3">
             <option selected>Title</option>
-            <option value="">MR.</option>
-            <option value="">MS.</option>
-            <option value="">MRS.</option>
+            <option value="">Mr.</option>
+            <option value="">Ms.</option>
+            <option value="">Mrs.</option>
           </select>
           <input
             type="text"
@@ -88,9 +88,9 @@ function Signup() {
             <option value="">Driving Licence</option>
           </select>
           <div className="row mb-5">
-            
-            <input type="text" className="form-control mb-3" placeholder="Identity number"/>
-            
+
+            <input type="text" className="form-control mb-3" placeholder="Identity number" />
+
           </div>
         </div>
         <div className="row login-credentials d-block mx-auto">
@@ -127,7 +127,7 @@ function Signup() {
           </div>
           <div className="col-12 back_to_signin mb-3">
             <span>
-              Already Signup !! then Back to {}
+              Already Signup !! then Back to { }
               <Link to={"/admin-login"}>Sign In</Link>
             </span>
           </div>
