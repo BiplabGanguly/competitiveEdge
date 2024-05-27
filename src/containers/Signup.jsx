@@ -88,9 +88,11 @@ function Signup() {
             <option value="">Driving Licence</option>
           </select>
           <div className="row mb-5">
-
-            <input type="text" className="form-control mb-3" placeholder="Identity number" />
-
+            <input
+              type="text"
+              className="form-control mb-3"
+              placeholder="Identity number"
+            />
           </div>
         </div>
         <div className="row login-credentials d-block mx-auto">
@@ -117,7 +119,8 @@ function Signup() {
           <hr></hr>
           <div className="col-12 checkbox mb-3">
             <span>
-              terms and condition <input type="checkbox" className="form-check-input" />
+              terms and condition{" "}
+              <input type="checkbox" className="form-check-input" />
             </span>
           </div>
           <div className="col-12 mb-3">
@@ -127,7 +130,7 @@ function Signup() {
           </div>
           <div className="col-12 back_to_signin mb-3">
             <span>
-              Already Signup !! then Back to { }
+              Already Signup !! then Back to {}
               <Link to={"/admin-login"}>Sign In</Link>
             </span>
           </div>

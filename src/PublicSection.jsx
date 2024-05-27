@@ -8,6 +8,7 @@ import Nav from "./components/Nav";
 import Signup from "./containers/Signup.jsx";
 import FormInstitute from "./containers/FormInstitute.jsx";
 import StudentLogin from "./components/StudentLogin.jsx";
+import StudentRegistration from "./components/StudentRegistration.jsx";
 
 function PublicSection() {
   return (
@@ -21,6 +22,7 @@ function PublicSection() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/form-institute" element={<FormInstitute />} />
         <Route path="/student" element={<StudentLogin />} />
+        <Route path="/studentRegistration" element={<StudentRegistration />} />
       </Routes>
     </div>
   );
