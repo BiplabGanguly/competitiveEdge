@@ -1,0 +1,22 @@
+.container{
+    width: 800px;
+}
+
+.Registration-Title{
+    margin-top: 6vh;
+    font-size: 1.6rem;
+}
+
+.personal-Information-Title{
+    margin-top: 5vh;
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+.back-to-signIn{
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+    text-align: left;
+    font-size: 3.2vh;
+}
+

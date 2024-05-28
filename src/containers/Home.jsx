@@ -2,6 +2,7 @@ import React from "react";
 import "../Css/home.css";
 import examimg from "../Public/homeExam.png";
 import InstituteNavigate from "../components/InstituteNavigate";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -23,9 +24,11 @@ function Home() {
               </div>
               <div className="row">
                 <div className="col-md-3 offset-md-5">
+                <Link to="/student">
                   <button type="button" className="btn btn-home">
                     Student
                   </button>
+                  </Link>
                 </div>
               </div>
             </div>
