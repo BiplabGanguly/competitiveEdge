@@ -4,6 +4,7 @@ import AdminDashboard from "./AdminSection/AdminDashboard";
 import AdminBranch from "./AdminSection/AdminBranch";
 import AdminRoute from "./AdminSection/AdminRoute";
 import AdminExamDash from "./ExamComponents/AdminExamDash";
+import QuestionBox from "./ExamComponents/QuestionBox";
 
 function AdminSection() {
   return (
@@ -13,6 +14,7 @@ function AdminSection() {
           <Route path="dashboard" element={<AdminDashboard />} />
           <Route path="/admin/adminbranch" element={<AdminBranch />} />
           <Route path="examdash" element={<AdminExamDash />} />
+          <Route path="questionbox/:id" element={<QuestionBox />} />
         </Route>
       </Routes>
     </div>
