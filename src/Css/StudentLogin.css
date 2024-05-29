@@ -1,0 +1,34 @@
+.Student-Login-Container {
+    margin-top: 14vh;
+}
+
+.stdLogin_Title {
+    font-size: 4vh;
+    margin-bottom: 4vh;
+}
+
+.input_box {
+    width: 44.5vw;
+    margin-bottom: 2vh;
+}
+
+.remenber-me {
+    text-align: left;
+}
+
+.emailc {
+    height: 50px;
+}
+
+.usernamec {
+    height: 50px;
+}
+
+.passwordc {
+    height: 50px;
+}
+
+.img-studentlogin {
+    width: 60vh;
+    border-radius: 30px;
+}

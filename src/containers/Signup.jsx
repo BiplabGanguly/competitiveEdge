@@ -10,16 +10,6 @@ function Signup() {
           <div className="Ragistration-title">Admin Registration</div>
         </div>
         <div className="row personal-information d-block mx-auto">
-          <div className="title-personal-information mb-3">
-            Personal Information
-          </div>
-          <hr></hr>
-          <select className="form-select mb-3">
-            <option selected>Title</option>
-            <option value="">Mr.</option>
-            <option value="">Ms.</option>
-            <option value="">Mrs.</option>
-          </select>
           <input
             type="text"
             className="form-control mb-3"
@@ -111,13 +101,10 @@ function Signup() {
             className="form-control mb-5"
             placeholder="confirm password"
           />
-        </div>
-
-        <div className="row terms_conditions d-block mx-auto">
-          <hr></hr>
           <div className="col-12 checkbox mb-3">
             <span>
-              terms and condition <input type="checkbox" className="form-check-input" />
+              terms and condition{" "}
+              <input type="checkbox" className="form-check-input" />
             </span>
           </div>
           <div className="col-12 mb-3">
@@ -127,7 +114,7 @@ function Signup() {
           </div>
           <div className="col-12 back_to_signin mb-3">
             <span>
-              Already Signup !! then Back to { }
+              Already Signup !! then Back to {}
               <Link to={"/admin-login"}>Sign In</Link>
             </span>
           </div>
