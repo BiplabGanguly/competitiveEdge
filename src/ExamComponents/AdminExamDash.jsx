@@ -44,11 +44,11 @@ function AdminExamDash() {
                             <div className="dashboardinfo">Scheduled Exams</div>
                             <hr />
                             <div className="row">
+                            <div className='card'>
                                 {ScheduledExam && ScheduledExam.length > 0 ? (
                                     ScheduledExam.map((examdata) => (
 
                                         <div className="col-md-4">
-                                            <p>{examdata.id}</p>
                                             <p>{examdata.exam_branch}</p>
                                             <p>{examdata.exam_name}</p>
                                             <p>{examdata.exam_date}</p>
@@ -62,6 +62,7 @@ function AdminExamDash() {
                                 ) : (
                                     <p>No scheduled exams available.</p>
                                 )}
+                                </div>
                             </div>
                         </div>
 
@@ -73,6 +74,7 @@ function AdminExamDash() {
                             <div className="dashboardinfo">Completed Exams</div>
                             <hr />
                             <div className="row">
+                            <div className='card'>
                                 {completedExam && completedExam.length > 0 ? (
                                     completedExam.map((examdata) => (
 
@@ -88,6 +90,7 @@ function AdminExamDash() {
                                 ) : (
                                     <p>No completed exams available.</p>
                                 )}
+                                </div>
                             </div>
                         </div>
                     </div>
