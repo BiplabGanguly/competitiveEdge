@@ -35,6 +35,7 @@ function AdminLogin() {
       navigate('/admin/dashboard');
       localStorage.setItem("admin_name", data.admin_username);
       localStorage.setItem("admin_token", data.token);
+      localStorage.setItem("admin_id", data.admin_id);
       localStorage.setItem("admin_permission", data.admin_permission);
       localStorage.setItem("admin_profile", data.admin_profile);
       console.log('Response:', data);

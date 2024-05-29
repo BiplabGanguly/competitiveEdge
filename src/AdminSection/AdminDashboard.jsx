@@ -82,13 +82,17 @@ function AdminDashboard() {
           </div>
           <div className="row">   <div className="BranchDiv">
             <div className="row">
-              {
+              {branchData && branchData.length > 0 ? (
                 branchData.map((branch, index) => (
                   <div className="col-md-4" key={index}>
-                    <AdminBranchInformation branches={branch.branch_name} />
+                    <AdminBranchInformation branches={branch.user_branch.branch_name} />
                   </div>
                 ))
-              }
+              ) : (
+                <div className="col-12">
+                  <p>No branches available.</p>
+                </div>
+              )}
             </div>
           </div></div>
           <hr />
