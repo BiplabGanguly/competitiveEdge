@@ -3,18 +3,19 @@ import { Link } from "react-router-dom";
 import "../Css/StudentLogin.css";
 import studentloginimage from "../Public/Student_Login_Image.png";
 
-function AdminLoginForm(event) {
-  event.preventDefault();
-  // Add your form submission logic here
-}
-
 function StudentLogin() {
+  const handleLoginFormSubmit = (event) => {
+    event.preventDefault();
+    // Add your form submission logic here
+    console.log("Form submitted");
+  };
+
   return (
     <div className="container Student-Login-Container">
       <div className="row login_row">
         <div className="col-lg-6 login_form">
           <div className="row">
-            <form onSubmit={AdminLoginForm}>
+            <form onSubmit={handleLoginFormSubmit}>
               <div className="col-md-12 stdLogin_Title">Student login</div>
               <hr />
               <div className="col-md-12">
@@ -53,12 +54,11 @@ function StudentLogin() {
             </form>
           </div>
         </div>
-
         <div className="col-lg-6">
           <div className="login-col-img">
             <img
               src={studentloginimage}
-              alt="adminlogin"
+              alt="student login"
               className="img-adminlogin"
             />
           </div>

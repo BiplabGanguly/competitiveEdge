@@ -1,5 +1,6 @@
 .Student-Login-Container {
     margin-top: 14vh;
+
 }
 
 .stdLogin_Title {
@@ -31,4 +32,8 @@
 .img-studentlogin {
     width: 60vh;
     border-radius: 30px;
+}
+
+.login-col-img {
+    margin-left: 12rem;
 }
