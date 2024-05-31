@@ -1,8 +1,17 @@
-import React from "react";
+// Import the useState hook from React.
+import React, { useState } from "react";
 import "../Css/adminRagistration.css";
 import { Link } from "react-router-dom";
 
 function Signup() {
+  // Add state to track whether the checkbox is checked.
+  const [isChecked, setIsChecked] = useState(false);
+
+  // Enable or disable the "Sign Up" button based on the state.
+  const handleCheckboxChange = (event) => {
+    setIsChecked(event.target.checked);
+  } 
+
   return (
     <>
       <div className="container">
@@ -43,11 +52,11 @@ function Signup() {
           />
           <div className="col-12 checkbox mb-3">
             <span>
-              terms and condition <input type="checkbox" className="form-check-input" />
+              terms and condition <input type="checkbox" className="form-check-input" onChange={handleCheckboxChange} />
             </span>
           </div>
           <div className="col-12 mb-3">
-            <button type="submit" className="btn btn-home" disabled>
+            <button type="submit" className="btn btn-home" disabled ={!isChecked}>
               Signup
             </button>
           </div>
