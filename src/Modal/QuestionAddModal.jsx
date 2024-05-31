@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { postExamQuestion } from '../ExamComponents/FetchExamData';
 
 function QuestionAddModal() {
     const [question, setQuestion] = useState('');
@@ -10,14 +11,22 @@ function QuestionAddModal() {
 
     const submitQuestion = async (e) => {
         e.preventDefault();
-        console.log(question, ans1, ans2, ans3, ans4, currectAns);
-        // Perform further actions like submitting data to backend
-        // window.location.reload() 
+        const questionData = {
+            question: question,
+            answer1: ans1,
+            answer2: ans2,
+            answer3: ans3,
+            answer4: ans4,
+            currectanswer: currectAns
+        }
+        postExamQuestion(questionData);
+        window.location.reload();
+        // console.log(examdata)
+
     }
 
     const handleRadioChange = (e) => {
         setCurrectAns(e.target.value);
-
     }
 
     return (

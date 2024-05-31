@@ -49,25 +49,24 @@ function AdminExamDash() {
                             <div className="dashboardinfo">Scheduled Exams</div>
                             <hr />
                             <div className="row">
-                                <div className='card'>
-                                    {ScheduledExam && ScheduledExam.length > 0 ? (
-                                        ScheduledExam.map((examdata) => (
 
-                                            <div className="col-md-4">
-                                                <p>{examdata.exam_branch}</p>
-                                                <p>{examdata.exam_name}</p>
-                                                <p>{examdata.exam_date}</p>
-                                                <p>{formatTime(examdata.exam_start_time)}</p>
-                                                <p>{formatTime(examdata.exam_end_time)}</p>
-                                                <Link to={`/admin/questionbox/${examdata.id}`}>
-                                                    <button type='btn' className='btn btn-primary' onClick={() => getExamId(examdata.id)}>add question</button>
-                                                </Link>
-                                            </div>
-                                        ))
-                                    ) : (
-                                        <p>No scheduled exams available.</p>
-                                    )}
-                                </div>
+                                {ScheduledExam && ScheduledExam.length > 0 ? (
+                                    ScheduledExam.map((examdata) => (
+                                        <div className="col-md-4 card me-3 mb-3" >
+                                            <p>{examdata.exam_branch}</p>
+                                            <p>{examdata.exam_name}</p>
+                                            <p>{examdata.exam_date}</p>
+                                            <p>{formatTime(examdata.exam_start_time)}</p>
+                                            <p>{formatTime(examdata.exam_end_time)}</p>
+                                            <Link to={`/admin/questionbox/${examdata.id}`}>
+                                                <button type='btn' className='btn btn-primary' onClick={() => getExamId(examdata.id)}>add question</button>
+                                            </Link>
+                                        </div>
+                                    ))
+                                ) : (
+                                    <p>No scheduled exams available.</p>
+                                )}
+
                             </div>
                         </div>
 
