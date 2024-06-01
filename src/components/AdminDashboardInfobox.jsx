@@ -2,16 +2,16 @@ import React from 'react'
 
 function AdminDashboardInfobox(props) {
     return (
-        <div className='admin-dashboard-info-box'>
+        <div className='container admin-dashboard-info-box'>
             <div className='row center-div-heading-content'>
-                {props.heading}
-            </div>
+                <span className='admin-data-branches'>{props.heading}
+                </span>          </div>
             <div className='row center-div-infonumber-content'>
-                {props.infonumber}
+                <span className='admin-data-infonumber'>{props.infonumber}</span>
             </div>
             <div className='row center-div-infodata-content'>
-                {props.infodata}
-            </div>
+                <span className='admin-data-info'>{props.infodata}
+                </span>           </div>
 
         </div>
     )
