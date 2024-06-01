@@ -10,7 +10,7 @@ function Signup() {
   // Enable or disable the "Sign Up" button based on the state.
   const handleCheckboxChange = (event) => {
     setIsChecked(event.target.checked);
-  } 
+  };
 
   return (
     <>
@@ -34,7 +34,7 @@ function Signup() {
             className="form-control mb-3"
             placeholder="email"
           />
-          
+
           <input
             type="text"
             className="form-control mb-3"
@@ -52,17 +52,26 @@ function Signup() {
           />
           <div className="col-12 checkbox mb-3">
             <span>
-              terms and condition <input type="checkbox" className="form-check-input" onChange={handleCheckboxChange} />
+              terms and condition{" "}
+              <input
+                type="checkbox"
+                className="form-check-input"
+                onChange={handleCheckboxChange}
+              />
             </span>
           </div>
           <div className="col-12 mb-3">
-            <button type="submit" className="btn btn-home" disabled ={!isChecked}>
+            <button
+              type="submit"
+              className="btn btn-home"
+              disabled={!isChecked}
+            >
               Signup
             </button>
           </div>
           <div className="col-12 back_to_signin mb-3">
             <span>
-              Already Signup !! then Back to { }
+              Already Signup !! then Back to {}
               <Link to={"/admin-login"}>Sign In</Link>
             </span>
           </div>
