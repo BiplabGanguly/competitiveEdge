@@ -1,0 +1,20 @@
+.card-exam-dash{
+    background-color: #836fff;
+    color: white;
+    padding: 2rem;
+    border-radius: 35px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 6px #211951;
+}
+
+
+.exam-branch-name{
+    font-size: 1.6rem;
+    text-align: left;
+}
+
+.exam-name{
+    font-size: 1.5rem;
+    text-align: right;
+}
