@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <>
-      <div className="container">
+      <div className="container home-container">
         <div className="row home-row">
           <div className="col-md-6">
             <div className="content">
