@@ -4,6 +4,7 @@ import Loader from "../components/Loader";
 import { fetchAllBranchDetails } from '../AdminSection/FetchAdminData';
 import { FetchCompletedExam, fetchScheduleExams } from './FetchExamData';
 import { Link } from 'react-router-dom';
+import "../Css/AdminExamDashStyle.css"
 
 function AdminExamDash() {
     const [loading, setLoading] = useState(true);
@@ -52,12 +53,11 @@ function AdminExamDash() {
 
                                 {ScheduledExam && ScheduledExam.length > 0 ? (
                                     ScheduledExam.map((examdata) => (
-                                        <div className="col-md-4 card me-3 mb-3" >
-                                            <p>{examdata.exam_branch}</p>
-                                            <p>{examdata.exam_name}</p>
-                                            <p>{examdata.exam_date}</p>
-                                            <p>{formatTime(examdata.exam_start_time)}</p>
-                                            <p>{formatTime(examdata.exam_end_time)}</p>
+                                        <div className="col-md-4 card-exam-dash me-3 mb-3" >
+                                            <p className='exam-branch-name'>{examdata.exam_branch}</p>
+                                            <p className='exam-name'>{examdata.exam_name}</p>
+                                            <p>Exam date : {examdata.exam_date}</p>
+                                            <p>Start Time : {formatTime(examdata.exam_start_time)} || End Time :{formatTime(examdata.exam_end_time)} </p>
                                             <Link to={`/admin/questionbox/${examdata.id}`}>
                                                 <button type='btn' className='btn btn-primary' onClick={() => getExamId(examdata.id)}>add question</button>
                                             </Link>
@@ -78,17 +78,15 @@ function AdminExamDash() {
                             <div className="dashboardinfo">Completed Exams</div>
                             <hr />
                             <div className="row">
-                                <div className='card'>
                                     {completedExam && completedExam.length > 0 ? (
                                         completedExam.map((examdata) => (
 
-                                            <div className="col-md-4">
-                                                <p>{examdata.exam_name}</p>
-                                                <p>{examdata.exam_branch}</p>
-                                                <p>{examdata.exam_date}</p>
-                                                <p>{formatTime(examdata.exam_start_time)}</p>
-                                                <p>{formatTime(examdata.exam_end_time)}</p>
-                                            </div>
+                                            <div className="col-md-4 card-exam-dash me-3 mb-3" >
+                                            <p className='exam-branch-name'>{examdata.exam_branch}</p>
+                                            <p className='exam-name'>{examdata.exam_name}</p>
+                                            <p>Exam date : {examdata.exam_date}</p>
+                                            <p>Start Time : {formatTime(examdata.exam_start_time)} || End Time :{formatTime(examdata.exam_end_time)} </p>
+                                        </div>
 
                                         ))
                                     ) : (
@@ -96,7 +94,6 @@ function AdminExamDash() {
                                     )}
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </>
             ))

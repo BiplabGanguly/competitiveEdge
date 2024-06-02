@@ -1,26 +1,16 @@
-.admin-dashboard-info-box {
-    background-color: blue;
-    height: 25vh;
-    margin: 0 2vh 3vh 2vh;
-    border-radius: 3vh;
+.admin-data-branches{
+    font-size: 1.6rem;
+    text-align: left;
+    margin-left: 8%;
 }
 
-.center-content {
-    height: 30vh;
-}
-
-.upper-content {
-    height: 20vh;
-
-}
 
 .admin-dashboard-info-box {
-    height: 20vh;
+    height: 26.8vh;
     border: 1px solid white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     border-radius: 1.4rem;
     background-color: #836fff;
     color: white;
@@ -29,15 +19,6 @@
 .admin-branch-button {
     display: flex;
     justify-content: right;
-}
-
-.center-content {
-    height: 26vh;
-}
-
-.upper-content {
-    margin-top: 5vh;
-    height: 14vh;
 }
 
 .admin-branch-btn {
@@ -69,4 +50,13 @@
 .dashboardinfo {
     text-align: left;
     margin-bottom: 4vh;
+}
+
+
+.center-content{
+    height: 30vh;
+}
+
+.branch-div{
+    height: 30vh;
 }
